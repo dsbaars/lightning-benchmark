@@ -19,13 +19,13 @@ The following configurations are available:
 
 Configuration | Implementation | Backend | Channels | Workers | Options
 ---|---|---|---|---|--
-`lnd-bbolt` | lnd 0.12.1 | bbolt | 10 | 100  |
-`lnd-bbolt-keysend` | lnd 0.12.1  | bbolt | 10 | 100 | keysend
-`lnd-etcd` | lnd 0.12.1  | single etcd instance | 10 | 100 |
-`lnd-etcd-cluster` | lnd 0.12.1  | three-instance etcd cluster | 10 | 100  |
-`clightning` | c-lightning 0.9.3 | sqlite | 1 <sup>[1]</sup> | 100 |
-`eclair` | eclair 0.6.1 | sqlite | 10 | 100 |
-`eclair-postgres` | eclair 0.6.1 | postgres | 10 | 100 |
+`lnd-bbolt` | lnd 0.14.3 | bbolt | 10 | 100  |
+`lnd-bbolt-keysend` | lnd 0.14.3  | bbolt | 10 | 100 | keysend
+`lnd-etcd` | lnd 0.14.3  | single etcd instance | 10 | 100 |
+`lnd-etcd-cluster` | lnd 0.14.3  | three-instance etcd cluster | 10 | 100  |
+`clightning` | c-lightning 0.11.0.1 | sqlite | 1 <sup>[1]</sup> | 100 |
+`eclair` | eclair 0.7.0 | sqlite | 10 | 100 |
+`eclair-postgres` | eclair 0.7.0 | postgres | 10 | 100 |
 
 <sup>1</sup> Multiple channels are not supported in c-lightning  
 

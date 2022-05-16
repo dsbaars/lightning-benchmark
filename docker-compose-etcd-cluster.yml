@@ -7,7 +7,7 @@ services:
 
   etcd-alice-1:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-alice-1
@@ -25,7 +25,7 @@ services:
 
   etcd-alice-2:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-alice-2
@@ -43,7 +43,7 @@ services:
 
   etcd-alice-3:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-alice-3
@@ -61,7 +61,7 @@ services:
 
   etcd-bob-1:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-bob-1
@@ -79,7 +79,7 @@ services:
 
   etcd-bob-2:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-bob-2
@@ -97,7 +97,7 @@ services:
 
   etcd-bob-3:
     restart: unless-stopped
-    image: 'bitnami/etcd:3.3.10'
+    image: 'bitnami/etcd:3.4.18'
     environment:
       - ALLOW_NONE_AUTHENTICATION=yes
       - ETCD_NAME=etcd-bob-3
@@ -118,7 +118,7 @@ services:
     build: 
       context: lnd
       args:
-        checkout: v0.12.1-beta
+        checkout: v0.14.3-beta
         tags: signrpc walletrpc chainrpc invoicesrpc monitoring kvdb_etcd
     depends_on:
       - bitcoind
@@ -137,7 +137,7 @@ services:
     build: 
       context: lnd
       args:
-        checkout: v0.12.1-beta
+        checkout: v0.14.3-beta
         tags: signrpc walletrpc chainrpc invoicesrpc monitoring kvdb_etcd
     depends_on:
       - bitcoind

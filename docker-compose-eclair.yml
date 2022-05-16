@@ -7,7 +7,7 @@ services:
 
   eclair-alice:
     restart: unless-stopped
-    image: acinq/eclair:release-0.6.1
+    image: acinq/eclair:release-0.7.0
     depends_on:
       - bitcoind
     volumes:
@@ -19,7 +19,7 @@ services:
 
   eclair-bob:
     restart: unless-stopped
-    image: acinq/eclair:release-0.6.1
+    image: acinq/eclair:release-0.7.0
     depends_on:
       - bitcoind
     volumes:
